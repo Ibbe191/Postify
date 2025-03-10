@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postify</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Postify</h1>
+    </header>
+
+    <main>
+        <section class="create-post">
+            <h2>Skapa nytt inlägg</h2>
+            <form id="blogForm">
+                <div class="form-group">
+                    <label for="title">Titel:</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Namn:</label>
+                    <input type="text" id="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Innehåll:</label>
+                    <textarea id="content" required></textarea>
+                </div>
+                <button type="submit">Publicera inlägg</button>
+            </form>
+        </section>
+
+        <section class="blog-posts">
+            <h2>Senaste inläggen</h2>
+            <div id="posts-container"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
